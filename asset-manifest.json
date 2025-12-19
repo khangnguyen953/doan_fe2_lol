@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/doan_fe2_lol/static/css/main.4eeb0117.css",
+    "main.js": "/doan_fe2_lol/static/js/main.04658cc4.js",
+    "static/media/mapall.jpg": "/doan_fe2_lol/static/media/mapall.3c0699d07c40212d86fe.jpg",
+    "static/media/cloud.jpg": "/doan_fe2_lol/static/media/cloud.83dc3256c414adf1d598.jpg",
+    "static/media/banner.jpg": "/doan_fe2_lol/static/media/banner.94ab122bb0047aba0391.jpg",
+    "index.html": "/doan_fe2_lol/index.html",
+    "main.4eeb0117.css.map": "/doan_fe2_lol/static/css/main.4eeb0117.css.map",
+    "main.04658cc4.js.map": "/doan_fe2_lol/static/js/main.04658cc4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4eeb0117.css",
+    "static/js/main.04658cc4.js"
+  ]
+}
