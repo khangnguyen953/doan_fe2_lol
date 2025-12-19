@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <!-- Phần tiêu đề (head) của trang web -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+         <script src="https://unpkg.com/i18next@23.15.1/dist/umd/i18next.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>LOL</title>
+  </head>
+  <style></style>
+  <body>
+    <!-- Phần giới thiệu (intro) với video nền -->
+    <section class="intro-section">
+      <video class="background-video" autoplay muted loop playsinline>
+        <source
+          src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/8ab3e227121c53aacab0c9b9f7a48adbc65db520.webm"
+          type="video/webm"
+        />
+      </video>
+      <div class="overlay"></div>
+      <div class="intro-content">
+        <img
+          src="image/lol-logo-rendered-hi-res.png"
+          alt="Logo"
+          class="intro-logo"
+        />
+        <a href="#explore" class="intro-button">Khám phá ngay</a>
+      </div>
+    </section>
+
+    <!-- Phần thanh điều hướng (navbar) -->
+    <div class="wrapper">
+      <nav class="navbar">
+        <div class="navbar-left">
+          <img src="image/images-removebg.png" alt="" class="logo" />
+          <img src="image/LOLICON.png" alt="LOL" class="logo-small" />
+        </div>
+        <ul class="navbar-menu">
+          <li><a href="" >TRÒ CHƠI</a></li>
+          <li><a href="#champions">TƯỚNG TIÊU BIỂU</a></li>
+          <li><a href="#news">TIN TỨC</a></li>
+          <li><a href="#game">THÔNG TIN CÁCH CHƠI</a></li>
+        </ul>
+        <div class="navbar-right">
+          <button id="language-toggle">EN/VN</button>
+          <a href="#" class="download-btn">TẢI GAME NGAY</a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Phần banner chính (hero) -->
+    <div class="Banner">
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            HOA LINH LỤC ĐỊA SONG GIỚI CHI NGOẠI: PHẦN 1
+          </h1>
+          <p class="hero-desc">
+            Chỉ khi bắt đầu bước đi, con đường mới dần lộ diện. Hãy đặt bước
+            chân đầu tiên đến thế giới thần thoại của mùa mới ngay hôm nay.
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=xDg9txAkZTw"
+            class="hero-button"
+            >XEM NGAY</a
+          >
+        </div>
+      </section>
+
+      <!-- Phần nội dung chính (content) -->
+      <div class="content">
+        <!-- Phần tướng tiêu biểu -->
+        <h2 class="section-title" id="champions">TƯỚNG TIÊU BIỂU</h2>
+        <div class="card-container">
+          <div class="card">
+            <div
+              class="card_bg"
+              style="
+                background-image: url('image/league-of-legends_thresh.jpg');
+              "
+            >
+              <span class="title">Thresh</span>
+            </div>
+            <div class="card_char">
+              <img src="image/threshnobg.png" alt="Thresh" />
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card_bg"
+              style="background-image: url('image/Yasuo_87.jpg')"
+            >
+              <span class="title">Yasuo</span>
+            </div>
+            <div class="card_char">
+              <img
+                src="image/hinh-nen-yasuo-4k-dep-nhat_040419375-removebg-preview.png"
+                alt="Yasuo"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card_bg"
+              style="background-image: url('image/1347715_leeSin.jpeg')"
+            >
+              <span class="title">Lee Sin</span>
+            </div>
+            <div class="card_char">
+              <img
+                src="image/storm-dragon-lee-sin-removebg-preview.png"
+                alt="Lee Sin"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card_bg"
+              style="background-image: url('image/1347714.jpeg')"
+            >
+              <span class="title">Ezreal</span>
+            </div>
+            <div class="card_char">
+              <img
+                src="image/ezreal-league-of-4480x2520-10537-removebg-preview.png"
+                alt="Ezreal"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card_bg"
+              style="background-image: url('image/karrma.jpg')"
+            >
+              <span class="title">Karma</span>
+            </div>
+            <div class="card_char">
+              <img src="image/removeKarma.png" alt="Karma" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Phần tin tức tiêu biểu -->
+        <h2 class="section-title" id="news">TIN TỨC TIÊU BIỂU</h2>
+        <div class="news-container">
+          <div class="news-card">
+            <img
+              src="image/imagetestLOL.avif"
+              alt="News 1"
+              class="news-image"
+            />
+            <p class="news-category">CỘNG ĐỒNG | 13/5/2025</p>
+            <h3 class="news-title">
+              Ân Mừng Sự Kiện Sắc Màu Hàn Hoan 2025: MHT & DTCL
+            </h3>
+            <p class="news-desc">
+              Chương trình ăn mừng sự kiện Sắc Màu Hàn Hoan vô cùng toàn thế
+              giới đang!
+            </p>
+          </div>
+          <div class="news-card">
+            <img
+              src="image/maxresdefault.jpg"
+              alt="News 2"
+              class="news-image"
+            />
+            <p class="news-category">CẬP NHẬT CHƠI | 1/5/2025</p>
+            <h3 class="news-title">Trailer Ra Mắt Phần 1</h3>
+            <p class="news-desc">
+              Mùa hè hứa hẹn sẽ nóng hơn bao giờ hết trong Hoa Linh Lục Địa:
+              Song Giới Chi Ngoại.
+            </p>
+          </div>
+          <div class="news-card">
+            <img
+              src="image/lmht-msi-2025-2.jpg"
+              alt="News 3"
+              class="news-image"
+            />
+            <p class="news-category">ESPORTS | 19/4/2025</p>
+            <h3 class="news-title">Vé MSI 2025 Vancouver Đã Mở Bán</h3>
+            <p class="news-desc">
+              Vé MSI 2025 tại Pacific Coliseum sẽ diễn ra từ ngày 27/06 - 12/07.
+              Hãy đặt vé ngay!
+            </p>
+          </div>
+          <div class="news-card">
+            <img src="image/CKTG 2025.jpg" alt="News 3" class="news-image" />
+            <p class="news-category">LEAGUE OF LEGENDS | 20/5/2025</p>
+            <h3 class="news-title">Thông Báo Chung Kết Thế Giới 2025</h3>
+            <p class="news-desc">
+              Chung kết CKTG 2025 sẽ được tổ chức tại Seoul, Hàn Quốc từ ngày
+              10/10 đến 5/11. Đừng bỏ lỡ trận đấu đỉnh cao của năm!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phần cách chơi 1: Rất nhiều cách chơi -->
+    <div class="play" id="game">
+      <div class="container">
+        <div class="left">
+          <h4>RẤT NHIỀU CÁCH</h4>
+          <h1>CHƠI</h1>
+          <button>CHƠI NGAY</button>
+          <div class="modes">
+            <div class="mode">
+              <img
+                src="image/SMR.avif"
+                data-video="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/bbc27473157462adacf0de441a8796268eb2d0ac.mp4"
+                data-desc="<strong>CHẾ ĐỘ CHƠI PHỔ BIẾN NHẤT</strong><br>Dọn đường, tham gia giao tranh tổng, phá hủy Nhà Chính của địch trước khi Nhà Chính của bạn bị phá hủy."
+                alt="Summoner's Rift"
+              />
+              <p>SUMMONER'S RIFT</p>
+            </div>
+            <div class="mode">
+              <img
+                src="image/Is4yyt3NwaPPwnnOkEGmFXCy1Nkg0ex4NuHQjF2J1GU.webp"
+                data-video="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/0a9b9f8dacb54086c58c1af8aa880d7cf6d7fea6.mp4"
+                data-desc="<strong>TẤT CẢ NGẪU NHIÊN</strong><br>CHỈ ĐI ĐƯỜNG GIỮA<br>Chiến đấu trên một cây cầu băng giá với những vị tướng ngẫu nhiên để xông thẳng tới Nhà Chính của địch trong chế độ 5v5 vui nhộn và hỗn loạn."
+                alt="ARAM"
+              />
+              <p>ARAM</p>
+            </div>
+            <div class="mode">
+              <img
+                src="image/30.jpg"
+                data-video="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/e5791dbc0787a96e83b82df20d44375f09f4d861.mp4"
+                data-desc="<strong>MỘT TRẬN HỖN CHIẾN ĐỂ GIÀNH NGÔI VỊ BÁ CHỦ</strong><br>Tập hợp những vị tướng để chiến đấu cho bạn. Vượt qua 7 đối thủ khác để trở thành người sống sót cuối cùng."
+                alt="Đấu Trường Chân Lý"
+              />
+              <p>ĐẤU TRƯỜNG CHÂN LÝ</p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="circle">
+            <video width="100%" height="100%" autoplay muted loop playsinline>
+              <source
+                src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/e5791dbc0787a96e83b82df20d44375f09f4d861.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <p class="desc">
+            CHẾ ĐỘ CHƠI PHỔ BIẾN NHẤT<br />
+            Dọn đường, tham gia giao tranh tổng, phá hủy Nhà Chính của địch
+            trước khi Nhà Chính của bạn bị phá hủy.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phần cách chơi 2: Phá hủy căn cứ -->
+    <div class="play_version2">
+      <div class="container">
+        <div class="left_version2">
+          <h2>PHÁ HỦY CĂN CỨ</h2>
+          <p>
+            Nhà Chính là trung tâm căn cứ của cả hai đội. Phá hủy Nhà Chính của
+            kẻ địch trước để giành chiến thắng.
+          </p>
+          <div class="modes_version2">
+            <div class="mode_version2">
+              <img
+                id="main-house"
+                class="zoomable"
+                src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/3f70356e890d0f5858fe9851f6f4de859223bf89-980x980.png?auto=format&fit=crop&q=80&h=96&w=96&crop=center"
+                data-full="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/d79ab89872173d65758e134c07ef0645f7a0e504-3288x2100.png?auto=format&fit=fill&q=80&w=729"
+                data-desc="<strong>NHÀ CHÍNH CỦA BẠN</strong><br>Nhà Chính của bạn là nơi lính xuất hiện. Phía sau Nhà Chính của bạn là Bệ Đá Cổ, nơi bạn có thể nhanh chóng hồi máu và hồi năng lượng cũng như mở Cửa Hàng."
+                alt="NhaChinh"
+              />
+              <p>Nhà Chính Của Bạn</p>
+            </div>
+            <div class="mode_version2">
+              <img
+                id="main-house"
+                class="zoomable"
+                src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/de5aec44fcea11a5320062399ff53b45bd76d060-980x980.png?auto=format&fit=crop&q=80&h=96&w=96&crop=center"
+                data-full="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/5bf342fa15ae8a7cc0eda852fdb0361c5d7dcbbf-3288x2100.png?auto=format&fit=fill&q=80&w=1350"
+                data-desc="<strong>NHÀ CHÍNH CỦA ĐỊCH</strong><br>Nằm sâu trong căn cứ của đội địch, Nhà Chính của địch cũng giống như của bạn. Phá hủy Nhà Chính của địch sẽ giúp đội của bạn giành chiến thắng."
+                alt="NhaChinhCuaDich"
+              />
+              <p>Nhà Chính Của Địch</p>
+            </div>
+          </div>
+        </div>
+        <div class="right_version2">
+          <div class="innerWrapper"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phần cách chơi 3: Dọn đường -->
+    <div class="version3">
+      <div class="container">
+        <div class="left-version3">
+          <div class="title-version3">DỌN ĐƯỜNG</div>
+          <div class="description-version3">
+            Đội của bạn cần dọn được ít nhất một đường để có thể tiến tới Nhà
+            Chính của địch. Trên đường sẽ có các chốt chặn phòng thủ gọi là trụ
+            và nhà lính. Mỗi đường sẽ có 3 trụ và 1 nhà lính, mỗi Nhà Chính được
+            bảo vệ bởi 2 trụ.
+          </div>
+          <div class="circles-version3">
+            <div>
+              <img
+                class="circle-version3"
+                src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/c955eecea79c17e8f5bcd5b4108e22dc674ad389-980x980.png?auto=format&fit=crop&q=80&h=38&w=38&crop=center"
+                data-large-image="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/351bb454c18a5f55dc1d47ba5674e246bfaa171b-3288x2100.png?auto=format&fit=fill&q=80&w=1350"
+                data-desc="Trụ gây sát thương lên lính và tướng địch, đồng thời cung cấp tầm nhìn giới hạn trong Sương Mù cho đồng minh. Hãy cho lính đi vào trước khi tấn công các công trình này để tránh nhận sát thương và xông lên chiến đấu."
+                alt="Trụ"
+              />
+              <div class="circle-label-version3">TRỤ</div>
+            </div>
+            <div>
+              <img
+                class="circle-version3"
+                src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/d173c3455cefd58b2a5817d9f75653935eff1393-980x980.png?auto=format&fit=crop&q=80&h=38&w=38&crop=center"
+                data-large-image="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/2c56d550aca55bcf28aeac0f2d9ecf35d7ff2c4f-3288x2100.png?auto=format&fit=fill&q=80&w=1350"
+                data-desc="Mỗi Nhà Lính đều được bảo vệ bởi 1 Trụ. Khi bị phá hủy, Lính Siêu Cấp sẽ xuất hiện trên đường đó trong vòng vài phút. Sau đó, Nhà Lính sẽ được khôi phục và Lính Siêu Cấp sẽ ngừng xuất hiện."
+                alt="Nhà Lính"
+              />
+              <div class="circle-label-version3">NHÀ LÍNH</div>
+            </div>
+          </div>
+        </div>
+        <div class="right-version3">
+          <img class="large-image-version3" id="largeImage-version3" />
+        </div>
+        <div
+          class="bottom-description-version3"
+          id="bottomDescription-version3"
+        >
+          <h1>TRỤ</h1>
+          <div>
+            <p>
+              Trụ gây sát thương lên lính và tướng địch, đồng thời cung cấp tầm
+              nhìn giới hạn trong Sương Mù cho đồng minh. Hãy cho lính đi vào
+              trước khi tấn công các công trình này để tránh nhận sát thương và
+              xông lên chiến đấu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phần cách chơi 4: Khái quát về khu vực rừng -->
+    <section class="version4">
+      <div class="container">
+        <div class="left-section_version4">
+          <h1 class="title_version4">KHÁI QUÁT VỀ<br />KHU VỰC RỪNG</h1>
+          <p class="description_version4">
+            Giữa các đường là khu vực rừng, nơi sinh sống của nhiều loài quái
+            rừng và cây cỏ. Hai loài quái vật quan trọng nhất là Baron Nashor và
+            Rồng. Tiêu diệt những quái vật này sẽ ban cho đội bạn các bùa lợi
+            độc nhất và thậm chí còn có thể xoay chuyển cục diện trận đấu.
+          </p>
+          <div class="circles_version4">
+            <div>
+              <img
+                class="circle_version4"
+                src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/c5aa9d0609c03b92ebb854c29537f9d5b9afe49f-980x980.png?auto=format&fit=crop&q=80&h=38&w=38&crop=center"
+                data-full="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/ed4bef5c2369044d76cf535e038b6c1f8d323f13-3288x2100.png?auto=format&fit=fill&q=80&w=673"
+                data-desc="<strong>BARON NASHOR</strong><br>Baron Nashor là quái vật hùng mạnh nhất trong khu vực rừng. Đội tiêu diệt Baron sẽ được cộng thêm sức mạnh công kích, sức mạnh phép thuật, cường hóa biến về và gia tăng đáng kể sức mạnh của lính xung quanh."
+                alt="BARON NASHOR"
+              />
+              <div class="circle-label_version4">BARON NASHOR</div>
+            </div>
+            <div>
+              <img
+                class="circle_version4"
+                src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/dd3af4418ea63af03ad11d0c065f66a282a3cd7d-980x980.png?auto=format&fit=crop&q=80&h=38&w=38&crop=center"
+                data-full="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/1faaf44ebe07ec29900a21db0810b130f4777342-3288x2100.png?auto=format&fit=fill&q=80&w=1350"
+                data-desc="<strong>RỒNG</strong><br>Rồng là những quái vật hùng mạnh với khả năng ban bùa lợi độc nhất tùy theo loại Rồng Nguyên Tố mà đội bạn tiêu diệt. Có 5 Rồng Nguyên Tố và 1 Rồng Ngàn Tuổi."
+                alt="Rồng"
+              />
+              <div class="circle-label_version4">RỒNG</div>
+            </div>
+          </div>
+        </div>
+        <div class="right-section_version4">
+          <img class="large-image_version4" />
+        </div>
+        <div class="bottom-description_version4">
+          <h1>BARON NASHOR</h1>
+          <p>
+            Baron Nashor là quái vật hùng mạnh nhất trong khu vực rừng. Đội tiêu
+            diệt Baron sẽ được cộng thêm sức mạnh công kích, sức mạnh phép
+            thuật, cường hóa biến về và gia tăng đáng kể sức mạnh của lính xung
+            quanh.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phần cách chơi 5: Chọn đường bạn muốn -->
+    <section class="version5">
+      <div class="container">
+        <div class="left-section_version4">
+          <h1 class="title_version5">CHỌN ĐƯỜNG<br />BẠN MUỐN</h1>
+          <p class="description_version5">
+            Có 5 vị trí tạo nên đội hình được đề xuất cho trò chơi. Mỗi đường
+            phù hợp với một số tướng và vị trí nhất định hãy thử tất cả hoặc
+            chọn một đường bạn cảm thấy thích hợp nhất.
+          </p>
+          <div class="circles_version5">
+            <div>
+              <img
+                class="circle_version5"
+                src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/8dac0c1318083c411c90f5f94feec17e84kowo52b-980x980.png?auto=format&fit=crop&q=80&h=96&w=96&crop=center"
+                data-full="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/fc8d0c8c803a8e91a1912df9054b3be90211a2d9-3288x2100.png?auto=format&fit=fill&q=80&w=1350"
+                data-desc="<strong>ĐƯỜNG TRÊN</strong><br>Các vị tướng đường trên là những đấu sĩ đơn độc ngoan cường của cả đội. Nhiệm vụ của họ là bảo vệ đường của mình và tập trung xử lý các thành viên nguy hiểm nhất của đội địch."
+                alt="ĐƯỜNG TRÊN"
+              />
+              <div class="circle-label_version5">ĐƯỜNG TRÊN</div>
+            </div>
+            <div>
+              <img
+                class="circle_version5"
+                src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/fa03a69b7c666230ae6945b83078e8a26027403a-980x980.png?auto=format&fit=crop&q=80&h=96&w=96&crop=center"
+                data-full="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/eb84be329ef915096e908527267852ff26845bba-3288x2100.png?auto=format&fit=fill&q=80&w=1350"
+                data-desc="<strong>RỪNG</strong><br>Các vị tướng đi rừng rất đam mê săn mồi. Rình rập giữa các đường một cách lén lút và khéo léo, họ để mắt tới những con quái rừng quan trọng nhất và nhảy ra đoạt mạng khi kẻ địch mất cảnh giác."
+                alt="RỪNG"
+              />
+              <div class="circle-label_version5">RỪNG</div>
+            </div>
+            <div>
+              <img
+                class="circle_version5"
+                src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/62fcfeb7dcbb737f0cdaceb554daf4237f2c234a-980x980.png?auto=format&fit=crop&q=80&h=96&w=96&crop=center"
+                data-full="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/245d81d16cb5fef638753ce7d83e137a4d2aaca7-3288x2100.png?auto=format&fit=fill&q=80&w=1350"
+                data-desc="<strong>ĐƯỜNG GIỮA</strong><br>Các vị tướng đường giữa là những nhân tố chẳng ngán ai với khả năng dồn sát thương—cho dù là trong chiến đấu đơn lẻ hay giao tranh tổng. Đối với họ, giao tranh là một vũ điệu nguy hiểm, nơi họ luôn tìm kiếm sơ hở của kẻ địch để tiễn chúng lên bảng đếm số."
+                alt="ĐƯỜNG GIỮA"
+              />
+              <div class="circle-label_version5">ĐƯỜNG GIỮA</div>
+            </div>
+            <div>
+              <img
+                class="circle_version5"
+                src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/1059c2aebd67b535ce1348fa0b72b453a46f6b5e-980x980.png?auto=format&fit=crop&q=80&h=96&w=96&crop=center"
+                data-full="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/87489b0e450b3fa59e176a3189c61c8eb9092c78-3288x2100.png?auto=format&fit=fill&q=80&w=1350"
+                data-desc="<strong>ĐƯỜNG DƯỚI</strong><br>Các vị tướng đường dưới giống như những khẩu pháo thủy tinh vậy. Vì rất mong manh, dễ vỡ nên họ cần được bảo vệ trong giai đoạn đầu trận trước khi có thể tích lũy đủ vàng và kinh nghiệm để đưa cả đội tới chiến thắng."
+                alt="ĐƯỜNG DƯỚI"
+              />
+              <div class="circle-label_version5">ĐƯỜNG DƯỚI</div>
+            </div>
+            <div>
+              <img
+                class="circle_version5"
+                src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/d5dc4ba9080bf3c361e061afa69c9563aa38f5f9-980x980.png?auto=format&fit=crop&q=80&h=48&w=48&crop=center"
+                data-full="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/ee41cd027bf8af85bebc07c8480b1304b793fc1e-3288x2100.png?auto=format&fit=fill&q=80&w=675"
+                data-desc="<strong>HỖ TRỢ</strong><br>Các vị tướng hỗ trợ là hộ vệ của cả đội. Họ giúp giữ cho đồng đội sống sót và tập trung vào trợ giúp kiến tạo các pha hạ gục, bảo vệ đồng đội ở đường dưới cho tới khi họ trở nên mạnh mẽ."
+                alt="HỖ TRỢ"
+              />
+              <div class="circle-label_version5">HỖ TRỢ</div>
+            </div>
+          </div>
+        </div>
+        <div class="right-section_version5">
+          <img class="large-image_version5" />
+        </div>
+        <div class="bottom-description_version5">
+          <h1></h1>
+          <p></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phần cách chơi 6: Tăng sức mạnh cho tướng -->
+    <div class="play-version6">
+      <div class="container-version6">
+        <div class="left-version6">
+          <h2>TĂNG SỨC MẠNH CHO TƯỚNG</h2>
+          <p>
+            Các vị tướng trở nên mạnh mẽ hơn bằng cách thu thập điểm kinh nghiệm
+            để thăng cấp và kiếm vàng để mua những trang bị uy lực hơn theo tiến
+            trình của trận đấu. Luôn dẫn đầu trong hai yếu tố này là điều quan
+            trọng để áp đảo đội địch và phá hủy căn cứ của họ.
+          </p>
+          <button>CHƠI NGAY</button>
+          <div class="modes-version6">
+            <div class="mode-version6">
+              <img
+                src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/04c0cbc07a2a5bf2374d4e6c547de0cd7c3ccde1-391x219.png"
+                data-video="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/8d49feeb42c45ac59b1d6cc1cae71d64ce0089f7.webm"
+                data-desc="<strong>TÍCH LŨY KINH NGHIỆM</strong><br>Khi một tướng thu thập đủ lượng điểm kinh nghiệm nhất định, họ sẽ thăng cấp và có thể mở khóa hoặc cường hóa các kỹ năng cũng như gia tăng chỉ số cơ bản. Thu thập điểm kinh nghiệm bằng cách tiêu diệt/hỗ trợ tiêu diệt lính và tướng địch, cũng như phá hủy các công trình phòng thủ."
+                alt="Summoner's Rift"
+              />
+            </div>
+            <div class="mode-version6">
+              <img
+                src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/068c135cf8a490007e50f74bb3325b0511c92f1b-391x219.png"
+                data-video="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/9b52333c4284f3e8e95a36981ba76c11820e0ac5.webm"
+                data-desc="<strong>KIẾM VÀNG</strong><br>Vàng là đơn vị tiền tệ trong trận đấu được sử dụng để mua trang bị cho tướng. Thu thập vàng bằng cách tiêu diệt/hỗ trợ tiêu diệt lính và tướng địch, cũng như phá hủy các công trình phòng thủ và sử dụng những trang bị cộng thêm vàng."
+              />
+            </div>
+            <div class="mode-version6">
+              <img
+                src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/c7df3dd081278445386681dae4600aaec02ea755-391x219.png"
+                data-full="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/7c790e73c1d817e57c174d4c4cdceb87d061e5b6-2560x1440.png"
+                data-desc="<strong>CỬA HÀNG</strong><br>Cửa Hàng là nơi bạn có thể mua bán các trang bị bằng số vàng bạn đã kiếm được. Bạn chỉ có thể vào Cửa Hàng khi đứng tại Bệ Đá Cổ."
+                alt="Đấu Trường Chân Lý"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="right-version6">
+          <div class="circle-version6">
+            <video width="100%" height="100%" autoplay muted loop playsinline>
+              <source />
+            </video>
+          </div>
+          <p class="desc-version6"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phần video nền cuối trang -->
+    <section class="intro-section">
+      <video class="background-video" autoplay muted loop playsinline>
+        <source
+          src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/8ab3e227121c53aacab0c9b9f7a48adbc65db520.webm"
+          type="video/webm"
+        />
+      </video>
+      <div class="overlay"></div>
+      <div class="intro-content">
+        <a href="#explore" class="intro-button">Chơi Ngay</a>
+      </div>
+    </section>
+
+    <!-- Phần chân trang (footer) -->
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-logos">
+          <img src="image/images-removebg.png" alt="Riot Games" />
+          <img src="image/LOLICON.png" alt="LOL" />
+        </div>
+        <p class="footer-info">
+          Công ty Cổ Phần VNG. Địa chỉ: Lô Z06 đường số 13, khu chế xuất Tân
+          Thuận, Tân Thuận Đông, Quận 7, TP. Hồ Chí Minh. Bản quyền trò chơi
+          thuộc Riot Games Inc. và Công Ty Cổ Phần VNG phân phối độc quyền tại
+          Việt Nam. Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1
+          trên mạng số: 2429/QĐ-BTTTT do Bộ Thông tin và Truyền thông cấp ngày
+          23/12/2022
+        </p>
+        <div class="footer-links">
+          <a href="#">CHÍNH SÁCH BẢO MẬT</a>
+          <a href="#">ĐIỀU KHOẢN SỬ DỤNG (VNG)</a>
+        </div>
+      </div>
+      <div class="footer-age-warning">
+        <img src="image/18Plus.png" alt="18+" />
+        <p>Chơi game quá 180 phút mỗi ngày sẽ ảnh hưởng xấu đến sức khỏe</p>
+      </div>
+    </footer>
+
+    <!-- Phần mã JavaScript -->
+
+    <script>
+      // Xử lý cuộn mượt mà cho các liên kết trong thanh điều hướng
+      document.querySelectorAll(".navbar-menu a").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Xử lý sự kiện click cho các hình ảnh trong phần chế độ chơi (play)
+      const modeImages = document.querySelectorAll(".mode img");
+      const video = document.querySelector(".circle video");
+      const videoSource = video.querySelector("source");
+      const descText = document.querySelector(".desc");
+
+      modeImages.forEach((img) => {
+        img.addEventListener("click", () => {
+          modeImages.forEach((i) => i.classList.remove("selected"));
+          img.classList.add("selected");
+          const newDesc = img.getAttribute("data-desc");
+          descText.innerHTML = newDesc;
+          const newVideo = img.getAttribute("data-video");
+          if (newVideo) {
+            video.pause();
+            videoSource.setAttribute("src", newVideo);
+            video.load();
+            video.play();
+          }
+        });
+      });
+
+      // Xử lý sự kiện click cho hình ảnh trong phần phá hủy căn cứ (play_version2)
+      document.querySelectorAll(".mode_version2 img").forEach((img) => {
+        img.addEventListener("click", () => {
+          const largeImgUrl = img.getAttribute("data-full");
+          const desc = img.getAttribute("data-desc");
+          const innerWrapper = document.querySelector(".innerWrapper");
+          innerWrapper.innerHTML = `
+          <img src="${largeImgUrl}" alt="Hình lớn" style="width: 100%; max-width: 600px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
+          <p style="color: white; margin-top: 12px;">${desc}</p>
+        `;
+        });
+      });
+
+      // Xử lý phóng to/thu nhỏ hình ảnh có lớp zoomable
+      const images = document.querySelectorAll(".zoomable");
+      images.forEach((img) => {
+        img.addEventListener("click", () => {
+          images.forEach((other) => {
+            if (other !== img) {
+              other.classList.remove("enlarged");
+            }
+          });
+          img.classList.toggle("enlarged");
+        });
+      });
+      document.addEventListener("click", (e) => {
+        if (!e.target.classList.contains("zoomable")) {
+          images.forEach((img) => img.classList.remove("enlarged"));
+        }
+      });
+
+      // Xử lý sự kiện click cho hình ảnh trong phần dọn đường (version3)
+      const circles = document.querySelectorAll(".circle-version3");
+      const largeImage = document.getElementById("largeImage-version3");
+      const bottomDescription = document.getElementById(
+        "bottomDescription-version3"
+      );
+
+      circles.forEach((circle) => {
+        circle.addEventListener("click", () => {
+          const largeImageSrc = circle.getAttribute("data-large-image");
+          const description = circle.getAttribute("data-desc");
+          largeImage.src = largeImageSrc;
+          const descDiv = bottomDescription.querySelectorAll("div");
+          const descH1 = bottomDescription.querySelector("h1");
+          descH1.textContent = circle.nextElementSibling.textContent;
+          descDiv[0].innerHTML = `<p>${description}</p>`;
+        });
+      });
+
+      // Xử lý sự kiện click cho hình ảnh trong phần khu vực rừng (version4)
+      const jungleCircles = document.querySelectorAll(".circle_version4");
+      const jungleLargeImage = document.querySelector(".large-image_version4");
+      const jungleBottomTitle = document.querySelector(
+        ".bottom-description_version4 h1"
+      );
+      const jungleBottomDesc = document.querySelector(
+        ".bottom-description_version4 p"
+      );
+
+      jungleCircles.forEach((jungleCircle) => {
+        jungleCircle.addEventListener("click", () => {
+          jungleCircles.forEach((circle) =>
+            circle.classList.remove("active_version4")
+          );
+          jungleCircle.classList.add("active_version4");
+          const selectedFullImageURL = jungleCircle.getAttribute("data-full");
+          jungleLargeImage.src = selectedFullImageURL;
+          const selectedDescHTML = jungleCircle.getAttribute("data-desc");
+          const tempDescContainer = document.createElement("div");
+          tempDescContainer.innerHTML = selectedDescHTML;
+          const descTitle = tempDescContainer.querySelector("strong");
+          if (descTitle) {
+            jungleBottomTitle.textContent = descTitle.textContent.trim();
+            descTitle.remove();
+          }
+          jungleBottomDesc.innerHTML = tempDescContainer.innerHTML.trim();
+        });
+      });
+
+      // Xử lý sự kiện click cho hình ảnh trong phần chọn đường (version5)
+      const version5Circles = document.querySelectorAll(".circle_version5");
+      const version5LargeImage = document.querySelector(
+        ".large-image_version5"
+      );
+      const version5BottomTitle = document.querySelector(
+        ".bottom-description_version5 h1"
+      );
+      const version5BottomDesc = document.querySelector(
+        ".bottom-description_version5 p"
+      );
+
+      version5Circles.forEach((version5Circle) => {
+        version5Circle.addEventListener("click", () => {
+          version5Circles.forEach((c) => c.classList.remove("active_version5"));
+          version5Circle.classList.add("active_version5");
+          const fullImageSrc = version5Circle.getAttribute("data-full");
+          version5LargeImage.src = fullImageSrc;
+          const descriptionHTML = version5Circle.getAttribute("data-desc");
+          const tempContainerDiv = document.createElement("div");
+          tempContainerDiv.innerHTML = descriptionHTML;
+          const extractedTitleElement =
+            tempContainerDiv.querySelector("strong");
+          if (extractedTitleElement) {
+            version5BottomTitle.textContent =
+              extractedTitleElement.textContent.trim();
+            extractedTitleElement.remove();
+          }
+          version5BottomDesc.innerHTML = tempContainerDiv.innerHTML.trim();
+        });
+      });
+
+      // Xử lý sự kiện click cho hình ảnh trong phần tăng sức mạnh tướng (version6)
+      const modeImagesVersion6 =
+        document.querySelectorAll(".mode-version6 img");
+      const videoVersion6 = document.querySelector(".circle-version6 video");
+      const videoSourceVersion6 = videoVersion6.querySelector("source");
+      const descTextVersion6 = document.querySelector(".desc-version6");
+
+      modeImagesVersion6.forEach((imgVersion6) => {
+        imgVersion6.addEventListener("click", () => {
+          modeImagesVersion6.forEach((iVersion6) =>
+            iVersion6.classList.remove("selected")
+          );
+          imgVersion6.classList.add("selected");
+          const newDescVersion6 = imgVersion6.getAttribute("data-desc");
+          descTextVersion6.innerHTML = newDescVersion6;
+          const newVideoVersion6 = imgVersion6.getAttribute("data-video");
+          if (newVideoVersion6) {
+            videoVersion6.style.display = "block";
+            videoVersion6.pause();
+            videoSourceVersion6.setAttribute("src", newVideoVersion6);
+            videoVersion6.load();
+            videoVersion6.play();
+          } else {
+            videoSourceVersion6.setAttribute("src", "");
+            videoVersion6.load();
+            videoVersion6.style.display = "none";
+          }
+          const fullImgUrlVersion6 = imgVersion6.getAttribute("data-full");
+          if (fullImgUrlVersion6) {
+            videoVersion6.style.display = "none";
+            let imgTagVersion6 = document.querySelector(
+              ".circle-version6 img.full-display"
+            );
+            if (!imgTagVersion6) {
+              imgTagVersion6 = document.createElement("img");
+              imgTagVersion6.classList.add("full-display");
+              imgTagVersion6.style.width = "100%";
+              imgTagVersion6.style.height = "100%";
+              imgTagVersion6.style.objectFit = "cover";
+              document
+                .querySelector(".circle-version6")
+                .appendChild(imgTagVersion6);
+            }
+            imgTagVersion6.setAttribute("src", fullImgUrlVersion6);
+            imgTagVersion6.style.display = "block";
+          } else {
+            const imgTagVersion6 = document.querySelector(
+              ".circle-version6 img.full-display"
+            );
+            if (imgTagVersion6) {
+              imgTagVersion6.style.display = "none";
+            }
+          }
+        });
+      });
+// chuyen đổi ngôn ngữ
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I18n Demo</title>
+  
+</head>
+<body>
+  <h1 id="welcome"></h1>
+  <p id="description"></p>
+  <button onclick="changeLanguage('en')">English</button>
+  <button onclick="changeLanguage('vi')">Tiếng Việt</button>
+
+  <script>
+    const resources = {
+      en: {
+        translation: {
+          "welcome": "Welcome",
+          "description": "This is an internationalized app"
+        }
+      },
+      vi: {
+        translation: {
+          "welcome": "Chào mừng",
+          "description": "Đây là một ứng dụng đa ngôn ngữ"
+        }
+      }
+    };
+
+    i18next.init({
+      lng: 'en',
+      resources
+    }, function(err, t) {
+      updateContent();
+    });
+
+    function updateContent() {
+      document.getElementById('welcome').innerHTML = i18next.t('welcome');
+      document.getElementById('description').innerHTML = i18next.t('description');
+    }
+
+    function changeLanguage(lng) {
+      i18next.changeLanguage(lng, updateContent);
+    }
+  </script>
+</body>
+</html>
